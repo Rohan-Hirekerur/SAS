@@ -14,6 +14,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
+        android:hint="email"
+        android:textColor="@color/colorPrimaryDark"
         android:inputType="textEmailAddress" />
 
     <EditText
@@ -24,6 +26,8 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:layout_below="@+id/Remail"
+        android:hint="password"
+        android:textColor="@color/colorPrimaryDark"
         android:inputType="textPassword" />
 
     <EditText
@@ -34,6 +38,8 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:layout_below="@+id/Rpassword"
+        android:hint="confirm password"
+        android:textColor="@color/colorPrimaryDark"
         android:inputType="textPassword" />
 
     <Button
@@ -44,5 +50,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
-        android:text="Button" />
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:text="Register" />
 </RelativeLayout>
