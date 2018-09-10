@@ -17,8 +17,8 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         email = findViewById(R.id.Remail);
-        password=findViewById(R.id.Rpassword);
-        conpassword=findViewById(R.id.RconfirmPassword);
-        register=findViewById(R.id.Register);
+        password = findViewById(R.id.Rpassword);
+        conpassword = findViewById(R.id.RconfirmPassword);
+        register = findViewById(R.id.Register);
     }
 }

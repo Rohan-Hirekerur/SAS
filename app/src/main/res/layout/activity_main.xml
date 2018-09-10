@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:textColor="@color/colorPrimaryDark"
+    android:background="@color/colorBackgroundLight"
     tools:context=".MainActivity">
 
 
@@ -14,6 +16,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="90dp"
+        android:hint="email"
+        android:textColor="@color/colorPrimaryDark"
         android:inputType="textEmailAddress" />
 
     <EditText
@@ -24,6 +28,8 @@
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:hint="password"
         android:inputType="textPassword" />
 
     <TextView
@@ -33,6 +39,7 @@
         android:layout_below="@+id/password"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:textColor="@color/colorPrimaryDark"
         android:text="Not a member? Register here!"
         android:textAlignment="center"/>
 
@@ -44,6 +51,8 @@
         android:text="Sign In"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
         android:layout_marginRight="20dp"/>
 
 
