@@ -65,4 +65,28 @@
 
     </RadioGroup>
 
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:background="@color/colorGreenLight"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:id="@+id/bookmark"
+        android:layout_width="50dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/submit"
+        android:layout_marginBottom="10dp"
+        android:text="B"
+        android:layout_marginLeft="5dp"/>
+
 </RelativeLayout>

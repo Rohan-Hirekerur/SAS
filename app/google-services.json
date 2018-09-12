@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "192902131260",
+    "firebase_url": "https://assesment-system.firebaseio.com",
+    "project_id": "assesment-system",
+    "storage_bucket": "assesment-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192902131260:android:c5300d85c30cd078",
+        "android_client_info": {
+          "package_name": "com.example.rohan.sas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192902131260-cim7se0of8mu63pi0bmaf3ppti49lfk2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rohan.sas",
+            "certificate_hash": "20d9e2508e39677bf6d1c215a2143b7d0f807e65"
+          }
+        },
+        {
+          "client_id": "192902131260-tib2ataktgdguhfgt003f2da7ls4it8e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBggxUAhEAKJjh8zAp7MS5cpjj3xEFfq9k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192902131260-tib2ataktgdguhfgt003f2da7ls4it8e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
