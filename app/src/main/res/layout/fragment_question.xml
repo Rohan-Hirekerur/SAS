@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackgroundLight"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/qNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Question :"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qNum"
+        android:textColor="#000000"
+        android:layout_margin="10dp"
+        android:text="Whats the number of zeros in 100100101010101010101010 ?"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/choices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_margin="10dp">
+
+        <RadioButton
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="12"
+            android:layout_margin="10dp" />
+
+        <RadioButton
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="13"
+            android:layout_margin="10dp" />
+
+        <RadioButton
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="14"
+            android:layout_margin="10dp" />
+
+        <RadioButton
+            android:id="@+id/option4"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:text="15"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+
+    </RadioGroup>
+
+</RelativeLayout>
