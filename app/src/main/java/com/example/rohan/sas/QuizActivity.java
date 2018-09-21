@@ -77,17 +77,17 @@ public class QuizActivity extends AppCompatActivity implements Question.OnCallba
         }
         lists=new Lists(bookmarked,markedAnswers);
 
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 1"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 2"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 3"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 4"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 5"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 6"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 7"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 8"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 9"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tab 10"));
-        tabLayout.addTab(tabLayout.newTab().setText("Submit"));
+        tabLayout.addTab(tabLayout.newTab().setText("Q1"));
+        tabLayout.addTab(tabLayout.newTab().setText("Q2"));
+        tabLayout.addTab(tabLayout.newTab().setText("Q3"));
+        tabLayout.addTab(tabLayout.newTab().setText("Q4"));
+        tabLayout.addTab(tabLayout.newTab().setText("Q5"));
+        tabLayout.addTab(tabLayout.newTab().setText("Q6"));
+        tabLayout.addTab(tabLayout.newTab().setText("Q7"));
+        tabLayout.addTab(tabLayout.newTab().setText("Q8"));
+        tabLayout.addTab(tabLayout.newTab().setText("Q9"));
+        tabLayout.addTab(tabLayout.newTab().setText("Q10"));
+        tabLayout.addTab(tabLayout.newTab().setText("Review"));
 
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
@@ -335,7 +335,6 @@ public class QuizActivity extends AppCompatActivity implements Question.OnCallba
     }
 
     public void Update(Integer pos,Integer ans) {
-        Toast.makeText(QuizActivity.this,pos+"",Toast.LENGTH_SHORT).show();
         markedAnswers.set(pos,ans);
     }
 
