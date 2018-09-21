@@ -1,5 +1,6 @@
 package com.example.rohan.sas;
 
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -54,6 +55,12 @@ public class Register extends AppCompatActivity {
                 }
                 else
                 {
+                    final ProgressDialog dialog = new ProgressDialog(Register.this);
+                    dialog.setTitle("Creating your account...");
+                    dialog.setMessage("Please wait while we create your account.");
+                    dialog.setCancelable(false);
+                    dialog.show();
+
                     if(password.equals(conPass)) {
                         mAuth.createUserWithEmailAndPassword(email, password)
                                 .addOnCompleteListener(Register.this, new OnCompleteListener<AuthResult>() {
@@ -61,7 +68,10 @@ public class Register extends AppCompatActivity {
                                     public void onComplete(@NonNull Task<AuthResult> task) {
                                         if (task.isSuccessful()) {
                                             // Sign in success, update UI with the signed-in user's information
+                                            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                                            user.sendEmailVerification();
                                             Intent intent = new Intent(Register.this,MainActivity.class);
+                                            dialog.dismiss();
                                             startActivity(intent);
                                             finish();
                                         } else {
@@ -89,6 +99,7 @@ public class Register extends AppCompatActivity {
                                                         }
                                                     })
                                                     .show();
+                                            dialog.dismiss();
                                         }
                                     }
                                 });

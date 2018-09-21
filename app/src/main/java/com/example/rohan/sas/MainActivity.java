@@ -1,5 +1,6 @@
 package com.example.rohan.sas;
 
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -64,15 +65,19 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                 {
+                    final ProgressDialog dialog = new ProgressDialog(MainActivity.this);
+                    dialog.setTitle("Signing in...");
+                    dialog.setMessage("Please wait while we sign you in !");
+                    dialog.setCancelable(false);
+                    dialog.show();
                     mAuth.signInWithEmailAndPassword(email, password)
                             .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (task.isSuccessful()) {
                                         // Sign in success, update UI with the signed-in user's information
-                                        FirebaseUser user = mAuth.getCurrentUser();
-                                        user.sendEmailVerification();
-                                        Intent intent = new Intent(MainActivity.this,QuizActivity.class);
+                                        Intent intent = new Intent(MainActivity.this,InstructionsActivity.class);
+                                        dialog.dismiss();
                                         startActivity(intent);
                                         finish();
                                         //updateUI(user);
@@ -100,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
                                                     }
                                                 })
                                                 .setCancelable(true).show();
+                                        dialog.dismiss();
 
 
                                         //updateUI(null);
@@ -120,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if (currentUser != null) {
-            Intent intent = new Intent(MainActivity.this,QuizActivity.class);
+            Intent intent = new Intent(MainActivity.this,InstructionsActivity.class);
             startActivity(intent);
             finish();
         }
